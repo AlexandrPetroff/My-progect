@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Таблица студентов</title>
+      <link rel="stylesheet" href="style.css">
+      <script defer type="module" src="main.js"></script>
+  </head>
+  <body class="page">
+    <div class="container">
+        <form action="#" class="student-form">
+            <h1 class="student-form__title">Добавление студента</h1>
+            <input type="text" name="Имя" placeholder="Введите имя студента" class="student-form__input input-name input-reset">
+            <input type="text" name="Фамилия" placeholder="Введите фамилию студента" class="student-form__input input-surname input-reset">
+            <input type="text" name="Отчество" placeholder="Введите отчество студента" class="student-form__input input-lastname input-reset">
+            <input type="date" name="дата рождения" placeholder="Выберите дату рождения студента" class="student-form__input input-birthday input-reset">
+            <input type="number" name="год обучения" placeholder="Введите год начала обучения" class="student-form__input input-year input-reset">
+            <input type="text" name="факультет" placeholder="Введите название факультета" class="student-form__input input-faculty input-reset">
+            <div class="wrapper-button">
+                <button class="student-form__btn add-btn btn-reset">Добавить</button>
+            </div>
+        </form>
+        <form action="#" class="filter-form">
+            <h1 class="filter-form__title">Фильтр поиска</h1>
+            <input type="text" name="ФИО" placeholder="Найти по ФИО" class="filter-form__input filter-name input-reset" >
+            <input type="text" name="Факультет" placeholder="Найти по названию факультета" class="filter-form__input filter-faculty input-reset">
+            <input type="number" name="Год начала" placeholder="Найти по году начала обучения" class="filter-form__input filter-year input-reset">
+            <input type="number" name="Год окончания" placeholder="Найти по году окончания обучения" class="filter-form__input filter-graduation input-reset">
+            <button class="filter-btn">Отфильтровать</button>
+        </form>
+
+        <div class="student-table">
+            <div class="student-table__head-string">
+                <div class="table-headings heading-name">Ф. И. О. студента
+                    <svg class="svg-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div class="table-headings heading-faculty">
+                    Факультет
+                    <svg class="svg-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                </div>
+                <div class="table-headings heading-age">
+                    Дата рождения и возраст
+                    <svg class="svg-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                </div>
+                <div class="table-headings heading-year">
+                    Годы обучения
+                    <svg class="svg-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                </div>
+                <div class="table-headings"></div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
